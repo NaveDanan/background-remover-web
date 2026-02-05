@@ -7,7 +7,6 @@ import {
   Maximize,
   Eye,
   EyeOff,
-  Sparkles,
   ArrowRight,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
