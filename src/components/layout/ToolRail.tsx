@@ -4,7 +4,6 @@ import {
   Wand2,
   Pipette,
   Layers,
-  Settings,
   ImageIcon,
   Sparkles,
 } from "lucide-react";
@@ -150,34 +149,7 @@ export function ToolRail({
           })}
         </div>
 
-        {/* Bottom Section - Settings */}
-        <div className="flex flex-col items-center gap-1 w-full px-2 pt-2 border-t border-gray-200/60 dark:border-gray-800/60">
-          <Tooltip>
-            <TooltipTrigger asChild>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className={cn(
-                  "w-full aspect-square max-w-[52px] rounded-xl",
-                  "flex flex-col items-center justify-center gap-1",
-                  "text-gray-500 dark:text-gray-400",
-                  "hover:bg-gray-100 dark:hover:bg-gray-800",
-                  "hover:text-gray-700 dark:hover:text-gray-200",
-                  "transition-all duration-200"
-                )}
-              >
-                <Settings className="h-5 w-5" strokeWidth={2} />
-                <span className="text-[10px] font-medium">Settings</span>
-              </motion.button>
-            </TooltipTrigger>
-            <TooltipContent side="right" sideOffset={8}>
-              <p className="font-medium">Settings</p>
-              <p className="text-xs text-gray-500 dark:text-gray-400">
-                App preferences
-              </p>
-            </TooltipContent>
-          </Tooltip>
-        </div>
+
       </motion.nav>
     </TooltipProvider>
   );

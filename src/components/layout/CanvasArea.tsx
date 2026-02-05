@@ -173,30 +173,19 @@ export function CanvasArea({
           >
             {/* Hero Section */}
             <div className="relative p-8 md:p-12 text-center">
+              
               {/* Gradient background effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-[#00C4CC]/5 via-transparent to-[#7B2FF7]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              
-              <motion.div
-                whileHover={{ scale: 1.02, y: -2 }}
+        
+              <img
+                src="/logo-no-bg.png"
+                alt="Logo"
                 className={cn(
-                  "w-24 h-24 mx-auto mb-6 rounded-3xl",
-                  "bg-gradient-to-br from-[#00C4CC]/10 to-[#7B2FF7]/10",
-                  "dark:from-[#00C4CC]/20 dark:to-[#7B2FF7]/20",
-                  "flex items-center justify-center",
-                  "border border-[#00C4CC]/20",
-                  "group-hover:shadow-lg group-hover:shadow-[#00C4CC]/10",
-                  "transition-all duration-300"
+                  "h-24 w-24 mx-auto mb-6",
+                  "transition-transform duration-300",
+                  "group-hover:scale-110"
                 )}
-              >
-                <Sparkles
-                  className={cn(
-                    "h-10 w-10 text-[#00C4CC]",
-                    "transition-transform duration-300",
-                    "group-hover:scale-110"
-                  )}
-                  strokeWidth={1.5}
-                />
-              </motion.div>
+              />
               
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-3 font-display">
                 Remove Background Instantly
